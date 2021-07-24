@@ -26,7 +26,6 @@
                     </div>
                 @endif
 
-               
 
                 @if (Route::has('login'))
                 <p>{{ Auth::user()->name }}</p>
@@ -36,7 +35,6 @@
                <p>Updated At: {{ Auth::user()->updated_at }}</p>
                 @auth
                      
-    
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>
